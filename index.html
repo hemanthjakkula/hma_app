@@ -38,6 +38,52 @@
       MIS Form comes here.
       
     </p>
+    <div style="text-align: center; margin-top: 30px;">
+      Enter Customer Name: <ons-input id="customer_name" modifier="underbar" placeholder="Customer Name" float></ons-input>
+      <p>
+        LOS/App No: <ons-input id="los_number" modifier="underbar" placeholder="LOS/APP No" float></ons-input>
+      </p>
+      <p>
+       Loan Amount: <ons-input id="loan_amount" modifier="underbar" placeholder="Loan Amount" float></ons-input>
+      </p>
+      <p>
+        Net Loan Amount: <ons-input id="net_loan_amount" modifier="underbar" placeholder="Net Loan Amount" float></ons-input>
+      </p>
+      <p>
+       Disbursed Date: <ons-input id="disbursed_date" type="date" modifier="underbar"> </ons-input>
+      </p>
+      <p>
+        Location: <ons-input id="location" modifier="underbar" placeholder="Location" float></ons-input>
+      </p>
+      <h3>Loan Type:</h3>: <ons-select id="choose-sel" onchange="editSelects(event)">
+        <option value="PL">Personal Loan</option>
+        <option value="BL">Business Loan</option>
+        <option value="LAP">LAP</option>
+        <option value="HL">Housing Loan</option>
+      </ons-select>
+  <h3>Entity:</h3>
+   <ons-select id="choose-sel" onchange="editSelects(event)">
+    <option value="pvt">PVT</option>
+    <option value="govt">GOVT</option>
+  </ons-select>
+  
+  <h3>Loan Type:</h3>
+  <ons-select id="choose-sel" onchange="editSelects(event)">
+    <option value="HDFC">HDFC</option>
+      <option value="ICICI">ICICI</option>
+      <option value="Axis">Axis</option>
+      <option value="Fullerton">Fullerton</option>
+      <option value="Bajaj">Bajaj</option>
+      <option value="Tata Capital">Tata Capital</option>
+      <option value="DHFL">DHFL</option>
+      <option value="MAGMA">MAGMA</option>
+      <option value="India Bulls">India Bulls</option>
+      <option value="SRI RAM">SRI RAM</option>
+  </ons-select>
+   <p style="margin-top: 30px;">
+      <ons-button onclick="">Submit</ons-button>
+    </p>
+    </div>
   </ons-page>
 </template>
 <script type="text/javascript" src="required.js"></script>
